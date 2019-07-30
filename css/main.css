@@ -177,6 +177,13 @@ footer .social-icons p{
   justify-content: center;
   align-items:center;
 }
+/*********************************
+About Page ****************/
+.mission{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
