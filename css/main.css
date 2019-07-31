@@ -310,16 +310,58 @@ About Page ****************/
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width:768px){
+header{
+  justify-content:space-around;
 }
+header .content-wrapper{
+  justify-content: space-between;
+}
+header nav ul{
+  justify-content: flex-end;
+  list-style-type:none;
+}
+header nav ul li{
+  padding:15px;
+}
+.header-divider{
+  width:0;
+}
+.hero-area .content-wrapper h1{
+  width:68%;
+}
+aside .content-wrapper{
+  display:flex;
+ width:47%;
+  justify-content:flex-start;
+  flex-flow:column wrap;
+}
+.features article{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:column wrap;
+}
+.features p{
+  width:50%;
+}
+.bottling-review{
+  display:flex;
+  flex-flow:column nowrap;
+}
+.footer-content{
+  display:flex;
+  flex-flow:row nowrap;
+  width:90%;
+  justify-content: space-around;
+}
+}
+/* Tablet styles here*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width:1200px){
+
 }
+/*Desktop styles here*/
 
 /* ==========================================================================
    Print styles.
