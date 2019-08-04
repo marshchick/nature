@@ -416,6 +416,52 @@ footer .content-wrapper{
 
 @media only screen and (min-width:1200px){
 
+  .hero-area h1{
+    width:60%;
+  }
+  aside .content-wrapper{
+    justify-content: space-around;
+  }
+  aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width:28%;
+    }
+    .features h2{
+      width:75%;
+    }    
+  .features article{
+    flex-basis:30%;
+  }
+  .reviews article div{
+    width:300px;
+  }
+  .content-wrapper{
+    max-width:960px;
+  }
+  .footer-content{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /****About****/
+  .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 78%;
+    }
+    .contact-section .content-wrapper h2 {
+      margin-bottom: 100px;
+    }
+    /****FAQ*****/
+    .faq h2 {
+      width: 100%;
+  }
+
+  .faq-content {
+      flex-basis: 75%;
+  }
+ 
+  
 }
 /*Desktop styles here*/
 
