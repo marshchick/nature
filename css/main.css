@@ -135,10 +135,10 @@ p{
   font-family: 'open sans', sans-serif;
 }
 img{
-
+width:100%;
 }
 figure{
-
+margin:0;
 }
 address{
   font-style:normal;
@@ -154,6 +154,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 .header-divider{
   width:100%;
@@ -166,7 +167,7 @@ header nav{
   justify-content: space-around;
   align-items: center;
   width:100%;
-  background-color: #202322;
+  
 }
 header nav ul{
   display: flex;
@@ -193,11 +194,19 @@ footer{
 footer .content-wrapper{
   width:55%;
   margin:50px 0;
+  text-align:center;
+}
+.background-pic{
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-area{
   display:flex;
   justify-content: center;
   flex-flow:row wrap;
+  min-height:500px;
 }
 .hero-area .content-wrapper h1{
   font-family:'Poppins', sans-serif;
@@ -214,6 +223,7 @@ footer .content-wrapper{
   align-items: center;
     flex-flow: row wrap;
     background-color:#527158;
+    
   }
   .content-wrapper{
     display:flex;
@@ -223,6 +233,8 @@ footer .content-wrapper{
   }
   aside .form {
     margin-top: 30px;
+    margin-bottom:30px;
+    width:87%;
   }
   
    
@@ -250,7 +262,10 @@ footer .content-wrapper{
   display:flex;
   flex-flow:row wrap;
   justify-content: center;
-  background-color: #999;
+  background-image:url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 .features h1{
@@ -283,7 +298,7 @@ section .reviews{
   display:flex;
   flex-flow:row wrap;
   justify-content: center;
-  background-color:cornflowerblue;
+  background-color:#2a423a;;
   color:white;
 }
 .reviews h1{
@@ -321,10 +336,16 @@ footer-content{
 }
 /*********************************
 About Page ****************/
+.header-divider{
+  width:100%;
+  height:1px;
+  margin:10px 0 20px 0;
+}
 .mission{
   display:flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
 }
 .mission h2{
   font-family: 'Poppins', sans-serif;
@@ -332,7 +353,18 @@ About Page ****************/
 }
 .content-wrapper h2{
   font-weight: normal;
-  font-size:2em;
+ 
+}
+.contact-section{
+  background-color: #2a423a;
+}
+.contact-section .content-wrapper h2{
+  font-size:1.875em;
+  margin-bottom:10px;
+}
+.contact-content h4{
+  font-size:1.125em;
+  font-family: 'Poppins', sans-serif;
 }
 footer .content-wrapper{
   display:flex;
@@ -342,6 +374,18 @@ footer .content-wrapper{
 /****FAQ***/
 .content-wrapper h1{
   font-family:'Poppins', sans-serif;
+  font-weight:normal;
+}
+figure{
+  width:70%;
+}
+header .content-wrapper{
+  width:100%;
+}
+.header-divider{
+  width:100%;
+  height:1px;
+  margin:10px 0 20px 0;
 }
 header nav{
   background-color: #202322;
@@ -352,18 +396,17 @@ header nav ul{
   font-weight: bold;
   padding-left:0;
 }
-.faq-area .content-wrapper h1 h3 {
+faq-area .content-wrapper h1 h3 {
   margin-left:30px;
-
+  font-weight:normal;
 }
 main{
-  background-color: #527158;
+  background-color:#527158;
   color:white;
-  padding-left: 15px;
+  padding-left:30px;
+ 
 }
-footer{
-  background-color: aqua;
-}
+
 
 
 
@@ -457,17 +500,18 @@ footer{
    ========================================================================== */
 
 @media only screen and (min-width:768px){
-  .content-wrapper{
-    max-width:640px;
-    margin:100px 0;
-    align-items:center;
+  .reviews .content-wrapper{
+   margin:100px 0;
   }
 header{
   justify-content:space-around;
 }
 header .content-wrapper{
-  justify-content: space-between;
+  justify-content: space-around;
   width:100%;
+}
+header .content-wrapper figure{
+  width:30%;
 }
 header nav ul{
   justify-content: space-between;
@@ -479,12 +523,47 @@ header nav {
 .header-divider{
   width:0;
 }
-aside .content-wrapper{
-  display:flex;
- margin:50px 0;
-  justify-content:space-between;
-  flex-flow:row wrap;
+.hero-area {
+  align-items:flex-start;
+  
 }
+.hero-area .content-wrapper h1{
+  margin-top:30px;
+  font-size:3em;
+}
+
+aside{
+  flex-flow:row nowrap;
+}
+aside .content-wrapper {
+  display:flex;
+ padding-left:30px;
+ padding-right:30px;
+  justify-content:left;
+  flex-flow:column nowrap;
+  width:50%;
+}
+aside .content-wrapper h2{
+  font-size:1.5em;
+}
+aside .form{
+  display:flex;
+ padding-left:30px;
+ padding-right:30px;
+  justify-content:left;
+  flex-flow:column nowrap;
+  width:50%;
+  margin-top:20px;
+}
+aside .form h2{
+  font-family: 'Poppins', sans-serif;
+  font-size:1.5em;
+  font-weight:normal;
+}
+aside .content-wrapper p{
+  width:80%;
+}
+
 .features article{
   display:flex;
   justify-content:center;
@@ -497,20 +576,42 @@ aside .content-wrapper{
 }
 .reviews article{
   display:flex;
-  justify-content:space-between;
+  width:50%;
+  padding-left:20px;
 }
-.reviews article div{
-  width:49%;
+.reviews article h3{
+  font-size:1.5em;
+  margin:0;
+  width:auto;
+}
+.reviews .content-wrapper h1{
+  width:75%;
+}
+
+.sub-review{
+  display:flex;
+  flex-flow:row nowrap;
+}
+.sub-review figure{
+  width:50%;
+}
+article .bottling-review{
+  display:flex;
+  flex-flow:column nowrap;
 }
 /***** Footer*****/
 footer .content-wrapper{
   width:65%;
-  margin:100px 0;
+  margin:75px 0;
 }
 .footer-content{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width:100%;
+}
+.copyright{
+  padding-bottom:30px;
 }
 /*******About*******/
 .mission-content{
@@ -521,16 +622,30 @@ footer .content-wrapper{
 .mission-content p{
   width:
 }
+.mission h2{
+  width:83%;
+}
+.mission .content-wrapper{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.contact-section .content-wrapper{
+  width:75%;
+  margin-top:30px;
+  margin-bottom:30px;
+}
 .contact-section .content-wrapper h2{
   width:
 }
 .contact-content{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+}
+.contact-section{
+  width:100%;
 }
 /*FAQ Page*/
-.faq-area .content-wrapper{
+ .content-wrapper{
   display:flex;
   justify-content:space-between;
   flex-flow:row wrap;
@@ -562,12 +677,21 @@ footer .content-wrapper{
 
 @media only screen and (min-width:1200px){
 
+  header .content-wrapper{
+    justify-content: space-between;
+  }
+  .mission h2{
+    width:75%;
+  }
   .hero-area h1{
     width:60%;
   }
-  aside .content-wrapper{
-    justify-content: space-around;
+  .background-pic{
+    height:650px;
   }
+ 
+    
+  
   aside .content-wrapper .form-description,
     aside .content-wrapper .form {
       width:28%;
@@ -586,18 +710,30 @@ footer .content-wrapper{
   }
   
   /****About****/
+  .mission{
+    height:435px;
+  }
   .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 100%;
+        width: 58%;
+    }
+    .contact-section .content-wrapper{
+      height:400px;
     }
     .contact-section .content-wrapper h2 {
       margin-bottom: 40px;
+    }
+    .content-wrapper{
+      max-width:1000px;
+    }
+    .footer-content{
+      align-items: flex-start;
     }
     /****FAQ*****/
     .faq h2 {
       width: 100%;
   }
-
+  
   .faq-content {
       flex-basis: 35%;
   }
