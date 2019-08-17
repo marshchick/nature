@@ -510,7 +510,7 @@ main{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+/*Tablet  styles here*/
 @media only screen and (min-width:768px){
   .reviews .content-wrapper{
    margin:100px 0;
@@ -632,7 +632,7 @@ footer .content-wrapper{
   align-items: center;
 }
 .mission-content p{
-  width:
+  width:72%;
 }
 .mission h2{
   width:83%;
@@ -647,7 +647,7 @@ footer .content-wrapper{
   margin-bottom:30px;
 }
 .contact-section .content-wrapper h2{
-  width:
+  width:40%;
 }
 .contact-content{
   display:flex;
@@ -656,6 +656,10 @@ footer .content-wrapper{
 .contact-section{
   width:100%;
 }
+.map{
+  padding-bottom:46%;
+}
+
 /*FAQ Page*/
  .content-wrapper{
   display:flex;
@@ -671,9 +675,6 @@ footer .content-wrapper{
   width:100%;
 }
 
-
-
-
 .question-1,
 .question-2,
 .question-3,
@@ -682,18 +683,13 @@ footer .content-wrapper{
   flex-flow:row wrap;
   width:45%;
 }
-
-
 }
-/* Tablet styles here*/
 
+/*Desktop styles here*/
 @media only screen and (min-width:1200px){
 
   header .content-wrapper{
     justify-content: space-between;
-  }
-  .mission h2{
-    width:75%;
   }
   .hero-area h1{
     width:60%;
@@ -701,9 +697,6 @@ footer .content-wrapper{
   .background-pic{
     height:650px;
   }
- 
-    
-  
   aside .content-wrapper .form-description,
     aside .content-wrapper .form {
       width:28%;
@@ -725,18 +718,42 @@ footer .content-wrapper{
   .mission{
     height:435px;
   }
-  .mission h2,
-    .contact-section .content-wrapper h2 {
-        width: 58%;
-    }
+  .mission .content-wrapper h2{
+    width:90%;
+    font-size:3em;
+  }
+  .mission-content p{
+    font-size:1.125em;
+    width:40%;
+  }
+    
     .contact-section .content-wrapper{
+      display:flex;
+      justify-content:center;
       height:400px;
+      width:100%;
+      flex-flow:row wrap;
     }
     .contact-section .content-wrapper h2 {
       margin-bottom: 40px;
+      font-size:3em;
+      width:auto;
     }
     .content-wrapper{
       max-width:1000px;
+    }
+    .contact-content{
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:space-between;
+      width:90%;
+    }
+    .contact-content p{
+      padding-right:40px;
+      font-size:1.125em;
+    }
+    .contact-content h4{
+      font-size:1.875em;
     }
     .footer-content{
       align-items: flex-start;
@@ -749,10 +766,13 @@ footer .content-wrapper{
   .faq-content {
       flex-basis: 35%;
   }
- 
-  
+  .map{
+    padding-bottom:37%;
+  }
 }
-/*Desktop styles here*/
+  
+
+
 
 /* ==========================================================================
    Print styles.
