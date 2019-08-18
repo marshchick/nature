@@ -281,9 +281,10 @@ font-family:'Poppins', sans-serif;
   align-items: center;
   flex-flow: row wrap;
 }
-
-
-
+.features i{
+  font-size:3.75em;
+  margin-bottom:40px;
+}
 .features article{
   margin:30px 0;
   width:55%;
@@ -586,6 +587,10 @@ aside .content-wrapper p{
 .features .features-item-description{
   width:50%;
 }
+.features i{
+  font-size:4.5em;
+  margin-bottom:40px;
+}
 .reviews article{
   display:flex;
   width:50%;
@@ -707,11 +712,25 @@ footer .content-wrapper{
   .features article{
     flex-basis:30%;
   }
-  .reviews article div{
-    width:42%;
+  .features i{
+    font-size:4.5em;
+    margin-bottom:40px;
   }
   .content-wrapper{
     max-width:960px;
+  }
+  .reviews .content-wrapper figure{
+    width:44%;
+  }
+  .sub-review{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+
+  }
+  .sub-review figure{
+    width:35%;
+    padding-right:30px;
   }
   
   /****About****/
